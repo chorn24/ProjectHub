@@ -1,0 +1,291 @@
+
+:root {
+    --ProjectContainerBackground: #190d22;
+    --ProjectContainerTextBackground: #0f0814;
+    --ProjectContainerTextShadow: #08040a;
+}
+
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(#02000e,#0a0030,#000020,#000000);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sparkle {
+    position: absolute;
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+
+}
+
+@keyframes SparkleAnimation {
+
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+}
+
+.ProjectTypeContainer {
+    background-color: var(--ProjectContainerTextBackground);
+    width: 55%;
+    height: 10vh;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5pt;
+    border-radius: 20pt;
+    box-shadow: 5pt 5pt 0pt var(--ProjectContainerTextShadow);
+}
+
+
+.ProjectType {
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+}
+
+@for $i from 1 through 100 {
+    .sparkle:nth-child(#{$i}) {
+        --size: #{random(2) * 0.2}vw;
+       
+        left: #{random(100)}vw;
+        right: #{random(100)}vw;
+        bottom: #{random(50)}vw;
+        top: #{random(50)}vw;
+
+        animation: SparkleAnimation #{5 + random(10)}s linear infinite;
+        animation-delay: #{random(10)}s;
+    }
+}
+
+.ProjectContainer {
+    position:absolute;
+    z-index: 10;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--ProjectContainerBackground);
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    overflow-y: scroll;
+}
+
+.ProjectContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.CoolHover1 {
+    width: 60%;
+    height: 100vh;
+    border-left: solid 2pt;
+    border-right: solid 2pt;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    animation: OuterBox1 3s infinite linear;
+    border-color: rgb(197, 71, 255);
+    animation-delay: 2.5s;
+    z-index: 10;
+}
+
+.CoolHover2 {
+    width: 95%;
+    height: 100vh;
+    border-left: solid 2pt;
+    border-right: solid 2pt;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    animation: OuterBox2 3s infinite linear;
+    animation-delay: 2s;
+    z-index: 10;
+    border-color: rgb(175, 61, 228);
+
+}
+
+.CoolHover3 {
+    width: 95%;
+    height: 100vh;
+    border-left: solid 2pt;
+    border-right: solid 2pt;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    animation: OuterBox3 3s infinite linear;
+    animation-delay: 1.5s;
+    z-index: 10;
+    border-color: rgb(134, 35, 180);
+}
+
+.CoolHover4 {
+    width: 95%;
+    height: 100vh;
+    border-left: solid 2pt;
+    border-right: solid 2pt;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    animation: OuterBox4 3s infinite linear;
+    animation-delay: 1s;
+    z-index: 10;
+    border-color: rgb(100, 28, 133);
+}
+
+@keyframes OuterBox1 {
+    0% {
+        border-color: rgb(255, 243, 71);
+    }
+
+    50% {
+        border-color: rgb(197, 71, 255);
+    }
+
+    100% {
+        border-color: rgb(255, 243, 71);
+    }
+}
+
+@keyframes OuterBox2 {
+    0% {
+        border-color: rgb(225, 228, 61);
+    }
+
+    50% {
+        border-color: rgb(175, 61, 228);
+    }
+
+    100% {
+        border-color: rgb(225, 228, 61);
+    }
+}
+
+@keyframes OuterBox3 {
+    0% {
+        border-color: rgb(180, 166, 35);
+    }
+
+    50% {
+        border-color: rgb(134, 35, 180);
+    }
+
+    100% {
+        border-color: rgb(180, 166, 35);
+    }
+}
+
+@keyframes OuterBox4 {
+    0% {
+        border-color: rgb(133, 123, 28);
+    }
+
+    50% {
+        border-color: rgb(100, 28, 133);
+    }
+
+    100% {
+        border-color: rgb(133, 123, 28);
+    }
+}
+
+
+.TwoGrid {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Project {
+    text-align: center;
+    background-color: var(--ProjectContainerTextBackground);
+    width: 40%;
+    border-radius: 25pt;
+    padding: 20pt;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 5pt 5pt 0pt var(--ProjectContainerTextShadow);
+    margin-bottom: 20pt;
+}
+
+
+.ImageSize {
+    width: 50%;
+}
+
+.Django {
+    color: rgb(99, 182, 99);
+}
+
+.Java {
+    color: rgb(236, 177, 68);
+}
+
+.Python {
+    color: rgb(122, 122, 255);
+}
+
+.React {
+    color: rgb(120, 204, 231);
+}
+
+.SoloProject {
+    color: rgb(200, 152, 255);
+}
+
+.GroupProject {
+    color: #f6ffcf;
+}
+// .particle {
+//     --size: 1vw;
+//     width: var(--size);
+//     height: var(--size);
+//     background: white;
+//     border-radius: 50%;
+//     position: absolute;
+//     bottom: -5vh;
+// }
+
+// @keyframes particleAnimation {
+//     0% {
+//         transform: translate3d(var(--left-ini), 0, 0,);
+//     }
+
+//     100% {
+//         transform: translate3d(var(--left-end), -110vh, 0);
+//         size: 0;
+//     }
+    
+// }
+
+// @for $i from 1 through 100 {
+//     .particle:nth-child(#{$i}) {
+//         --size: #{random(2) * 0.2}vw;
+//         --left-ini: #{random(20) - 10}vw;
+//         --left-end: #{random(20) - 20}vw;
+//         left: #{random(100)}vw;
+//         animation: particleAnimation #{5 + random(10)}s linear infinite;
+//         animation-delay: #{random(10)}s;
+//     }
+// }

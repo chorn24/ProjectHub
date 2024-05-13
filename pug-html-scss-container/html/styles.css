@@ -1,0 +1,1222 @@
+:root {
+  --ProjectContainerBackground: #190d22;
+  --ProjectContainerTextBackground: #0f0814;
+  --ProjectContainerTextShadow: #08040a;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(#02000e, #0a0030, #000020, #000000);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sparkle {
+  position: absolute;
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+}
+
+@keyframes SparkleAnimation {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: transparent;
+  }
+}
+.ProjectTypeContainer {
+  background-color: var(--ProjectContainerTextBackground);
+  width: 55%;
+  height: 10vh;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5pt;
+  border-radius: 20pt;
+  box-shadow: 5pt 5pt 0pt var(--ProjectContainerTextShadow);
+}
+
+.ProjectType {
+  color: white;
+  text-align: center;
+  font-size: 35pt;
+}
+
+.sparkle:nth-child(1) {
+  --size: 0.4vw;
+  left: 48vw;
+  right: 6vw;
+  bottom: 49vw;
+  top: 48vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(2) {
+  --size: 0.2vw;
+  left: 90vw;
+  right: 50vw;
+  bottom: 8vw;
+  top: 11vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(3) {
+  --size: 0.4vw;
+  left: 39vw;
+  right: 71vw;
+  bottom: 41vw;
+  top: 49vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 4s;
+}
+
+.sparkle:nth-child(4) {
+  --size: 0.2vw;
+  left: 88vw;
+  right: 82vw;
+  bottom: 13vw;
+  top: 42vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(5) {
+  --size: 0.4vw;
+  left: 16vw;
+  right: 12vw;
+  bottom: 21vw;
+  top: 24vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(6) {
+  --size: 0.4vw;
+  left: 54vw;
+  right: 95vw;
+  bottom: 43vw;
+  top: 3vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(7) {
+  --size: 0.4vw;
+  left: 36vw;
+  right: 6vw;
+  bottom: 29vw;
+  top: 25vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(8) {
+  --size: 0.2vw;
+  left: 40vw;
+  right: 26vw;
+  bottom: 44vw;
+  top: 37vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(9) {
+  --size: 0.2vw;
+  left: 45vw;
+  right: 36vw;
+  bottom: 43vw;
+  top: 15vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(10) {
+  --size: 0.2vw;
+  left: 49vw;
+  right: 9vw;
+  bottom: 20vw;
+  top: 22vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(11) {
+  --size: 0.4vw;
+  left: 2vw;
+  right: 3vw;
+  bottom: 41vw;
+  top: 19vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(12) {
+  --size: 0.2vw;
+  left: 37vw;
+  right: 21vw;
+  bottom: 27vw;
+  top: 21vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(13) {
+  --size: 0.2vw;
+  left: 6vw;
+  right: 53vw;
+  bottom: 47vw;
+  top: 15vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(14) {
+  --size: 0.2vw;
+  left: 28vw;
+  right: 65vw;
+  bottom: 34vw;
+  top: 38vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(15) {
+  --size: 0.2vw;
+  left: 20vw;
+  right: 62vw;
+  bottom: 43vw;
+  top: 11vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(16) {
+  --size: 0.2vw;
+  left: 65vw;
+  right: 69vw;
+  bottom: 14vw;
+  top: 29vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(17) {
+  --size: 0.2vw;
+  left: 61vw;
+  right: 41vw;
+  bottom: 10vw;
+  top: 49vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(18) {
+  --size: 0.4vw;
+  left: 1vw;
+  right: 29vw;
+  bottom: 46vw;
+  top: 36vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(19) {
+  --size: 0.4vw;
+  left: 40vw;
+  right: 42vw;
+  bottom: 17vw;
+  top: 1vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(20) {
+  --size: 0.2vw;
+  left: 30vw;
+  right: 74vw;
+  bottom: 27vw;
+  top: 32vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(21) {
+  --size: 0.4vw;
+  left: 75vw;
+  right: 14vw;
+  bottom: 39vw;
+  top: 25vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(22) {
+  --size: 0.4vw;
+  left: 23vw;
+  right: 59vw;
+  bottom: 47vw;
+  top: 20vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(23) {
+  --size: 0.2vw;
+  left: 26vw;
+  right: 25vw;
+  bottom: 32vw;
+  top: 19vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(24) {
+  --size: 0.2vw;
+  left: 42vw;
+  right: 37vw;
+  bottom: 28vw;
+  top: 31vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(25) {
+  --size: 0.2vw;
+  left: 99vw;
+  right: 34vw;
+  bottom: 40vw;
+  top: 4vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(26) {
+  --size: 0.4vw;
+  left: 63vw;
+  right: 81vw;
+  bottom: 13vw;
+  top: 36vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(27) {
+  --size: 0.2vw;
+  left: 84vw;
+  right: 17vw;
+  bottom: 18vw;
+  top: 38vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(28) {
+  --size: 0.4vw;
+  left: 32vw;
+  right: 69vw;
+  bottom: 14vw;
+  top: 17vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(29) {
+  --size: 0.2vw;
+  left: 14vw;
+  right: 40vw;
+  bottom: 12vw;
+  top: 40vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(30) {
+  --size: 0.2vw;
+  left: 8vw;
+  right: 60vw;
+  bottom: 33vw;
+  top: 5vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(31) {
+  --size: 0.4vw;
+  left: 28vw;
+  right: 97vw;
+  bottom: 32vw;
+  top: 20vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(32) {
+  --size: 0.4vw;
+  left: 46vw;
+  right: 41vw;
+  bottom: 10vw;
+  top: 39vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(33) {
+  --size: 0.2vw;
+  left: 34vw;
+  right: 22vw;
+  bottom: 50vw;
+  top: 20vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(34) {
+  --size: 0.2vw;
+  left: 10vw;
+  right: 72vw;
+  bottom: 39vw;
+  top: 18vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(35) {
+  --size: 0.4vw;
+  left: 80vw;
+  right: 14vw;
+  bottom: 7vw;
+  top: 43vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(36) {
+  --size: 0.4vw;
+  left: 75vw;
+  right: 72vw;
+  bottom: 15vw;
+  top: 4vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(37) {
+  --size: 0.2vw;
+  left: 19vw;
+  right: 52vw;
+  bottom: 16vw;
+  top: 15vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(38) {
+  --size: 0.2vw;
+  left: 6vw;
+  right: 55vw;
+  bottom: 15vw;
+  top: 43vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(39) {
+  --size: 0.2vw;
+  left: 56vw;
+  right: 96vw;
+  bottom: 20vw;
+  top: 23vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(40) {
+  --size: 0.4vw;
+  left: 40vw;
+  right: 88vw;
+  bottom: 26vw;
+  top: 8vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(41) {
+  --size: 0.4vw;
+  left: 80vw;
+  right: 40vw;
+  bottom: 40vw;
+  top: 33vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(42) {
+  --size: 0.4vw;
+  left: 15vw;
+  right: 10vw;
+  bottom: 20vw;
+  top: 22vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(43) {
+  --size: 0.4vw;
+  left: 49vw;
+  right: 75vw;
+  bottom: 1vw;
+  top: 40vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(44) {
+  --size: 0.2vw;
+  left: 53vw;
+  right: 59vw;
+  bottom: 47vw;
+  top: 41vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(45) {
+  --size: 0.2vw;
+  left: 44vw;
+  right: 48vw;
+  bottom: 25vw;
+  top: 16vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(46) {
+  --size: 0.4vw;
+  left: 44vw;
+  right: 43vw;
+  bottom: 1vw;
+  top: 44vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(47) {
+  --size: 0.2vw;
+  left: 77vw;
+  right: 99vw;
+  bottom: 42vw;
+  top: 17vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(48) {
+  --size: 0.4vw;
+  left: 25vw;
+  right: 2vw;
+  bottom: 39vw;
+  top: 12vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(49) {
+  --size: 0.4vw;
+  left: 3vw;
+  right: 18vw;
+  bottom: 19vw;
+  top: 19vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(50) {
+  --size: 0.4vw;
+  left: 48vw;
+  right: 40vw;
+  bottom: 38vw;
+  top: 50vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(51) {
+  --size: 0.4vw;
+  left: 53vw;
+  right: 75vw;
+  bottom: 43vw;
+  top: 42vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(52) {
+  --size: 0.2vw;
+  left: 77vw;
+  right: 45vw;
+  bottom: 21vw;
+  top: 1vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 4s;
+}
+
+.sparkle:nth-child(53) {
+  --size: 0.4vw;
+  left: 13vw;
+  right: 82vw;
+  bottom: 16vw;
+  top: 25vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(54) {
+  --size: 0.2vw;
+  left: 61vw;
+  right: 18vw;
+  bottom: 13vw;
+  top: 50vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(55) {
+  --size: 0.4vw;
+  left: 65vw;
+  right: 38vw;
+  bottom: 22vw;
+  top: 39vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(56) {
+  --size: 0.4vw;
+  left: 1vw;
+  right: 74vw;
+  bottom: 11vw;
+  top: 41vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(57) {
+  --size: 0.2vw;
+  left: 75vw;
+  right: 6vw;
+  bottom: 15vw;
+  top: 12vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(58) {
+  --size: 0.4vw;
+  left: 59vw;
+  right: 9vw;
+  bottom: 49vw;
+  top: 26vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(59) {
+  --size: 0.4vw;
+  left: 27vw;
+  right: 77vw;
+  bottom: 40vw;
+  top: 39vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(60) {
+  --size: 0.2vw;
+  left: 15vw;
+  right: 83vw;
+  bottom: 22vw;
+  top: 34vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 4s;
+}
+
+.sparkle:nth-child(61) {
+  --size: 0.2vw;
+  left: 21vw;
+  right: 33vw;
+  bottom: 20vw;
+  top: 11vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 4s;
+}
+
+.sparkle:nth-child(62) {
+  --size: 0.4vw;
+  left: 99vw;
+  right: 60vw;
+  bottom: 25vw;
+  top: 1vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(63) {
+  --size: 0.2vw;
+  left: 42vw;
+  right: 12vw;
+  bottom: 17vw;
+  top: 41vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(64) {
+  --size: 0.4vw;
+  left: 23vw;
+  right: 75vw;
+  bottom: 18vw;
+  top: 30vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(65) {
+  --size: 0.2vw;
+  left: 9vw;
+  right: 57vw;
+  bottom: 36vw;
+  top: 48vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(66) {
+  --size: 0.4vw;
+  left: 22vw;
+  right: 97vw;
+  bottom: 34vw;
+  top: 16vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(67) {
+  --size: 0.4vw;
+  left: 60vw;
+  right: 82vw;
+  bottom: 4vw;
+  top: 39vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(68) {
+  --size: 0.2vw;
+  left: 36vw;
+  right: 89vw;
+  bottom: 22vw;
+  top: 25vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 4s;
+}
+
+.sparkle:nth-child(69) {
+  --size: 0.2vw;
+  left: 5vw;
+  right: 71vw;
+  bottom: 41vw;
+  top: 26vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(70) {
+  --size: 0.4vw;
+  left: 93vw;
+  right: 84vw;
+  bottom: 31vw;
+  top: 10vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(71) {
+  --size: 0.2vw;
+  left: 58vw;
+  right: 87vw;
+  bottom: 19vw;
+  top: 9vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(72) {
+  --size: 0.4vw;
+  left: 34vw;
+  right: 95vw;
+  bottom: 27vw;
+  top: 33vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(73) {
+  --size: 0.4vw;
+  left: 15vw;
+  right: 99vw;
+  bottom: 40vw;
+  top: 10vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(74) {
+  --size: 0.2vw;
+  left: 8vw;
+  right: 22vw;
+  bottom: 35vw;
+  top: 30vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(75) {
+  --size: 0.4vw;
+  left: 36vw;
+  right: 25vw;
+  bottom: 47vw;
+  top: 20vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(76) {
+  --size: 0.2vw;
+  left: 19vw;
+  right: 55vw;
+  bottom: 35vw;
+  top: 41vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(77) {
+  --size: 0.4vw;
+  left: 76vw;
+  right: 39vw;
+  bottom: 3vw;
+  top: 4vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(78) {
+  --size: 0.2vw;
+  left: 67vw;
+  right: 77vw;
+  bottom: 3vw;
+  top: 49vw;
+  animation: SparkleAnimation 15s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(79) {
+  --size: 0.2vw;
+  left: 57vw;
+  right: 10vw;
+  bottom: 35vw;
+  top: 45vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(80) {
+  --size: 0.2vw;
+  left: 38vw;
+  right: 31vw;
+  bottom: 46vw;
+  top: 49vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(81) {
+  --size: 0.4vw;
+  left: 31vw;
+  right: 68vw;
+  bottom: 34vw;
+  top: 38vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(82) {
+  --size: 0.4vw;
+  left: 94vw;
+  right: 81vw;
+  bottom: 14vw;
+  top: 26vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(83) {
+  --size: 0.4vw;
+  left: 51vw;
+  right: 24vw;
+  bottom: 49vw;
+  top: 18vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(84) {
+  --size: 0.4vw;
+  left: 79vw;
+  right: 70vw;
+  bottom: 2vw;
+  top: 10vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 8s;
+}
+
+.sparkle:nth-child(85) {
+  --size: 0.4vw;
+  left: 12vw;
+  right: 75vw;
+  bottom: 1vw;
+  top: 24vw;
+  animation: SparkleAnimation 12s linear infinite;
+  animation-delay: 10s;
+}
+
+.sparkle:nth-child(86) {
+  --size: 0.4vw;
+  left: 47vw;
+  right: 12vw;
+  bottom: 18vw;
+  top: 48vw;
+  animation: SparkleAnimation 10s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(87) {
+  --size: 0.2vw;
+  left: 36vw;
+  right: 84vw;
+  bottom: 7vw;
+  top: 3vw;
+  animation: SparkleAnimation 6s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(88) {
+  --size: 0.4vw;
+  left: 28vw;
+  right: 52vw;
+  bottom: 16vw;
+  top: 41vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(89) {
+  --size: 0.4vw;
+  left: 75vw;
+  right: 88vw;
+  bottom: 20vw;
+  top: 27vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(90) {
+  --size: 0.2vw;
+  left: 68vw;
+  right: 28vw;
+  bottom: 27vw;
+  top: 4vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(91) {
+  --size: 0.4vw;
+  left: 14vw;
+  right: 57vw;
+  bottom: 47vw;
+  top: 6vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(92) {
+  --size: 0.2vw;
+  left: 98vw;
+  right: 5vw;
+  bottom: 32vw;
+  top: 25vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 5s;
+}
+
+.sparkle:nth-child(93) {
+  --size: 0.4vw;
+  left: 44vw;
+  right: 79vw;
+  bottom: 4vw;
+  top: 6vw;
+  animation: SparkleAnimation 11s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(94) {
+  --size: 0.2vw;
+  left: 94vw;
+  right: 77vw;
+  bottom: 1vw;
+  top: 5vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(95) {
+  --size: 0.2vw;
+  left: 35vw;
+  right: 5vw;
+  bottom: 32vw;
+  top: 41vw;
+  animation: SparkleAnimation 9s linear infinite;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(96) {
+  --size: 0.4vw;
+  left: 68vw;
+  right: 22vw;
+  bottom: 34vw;
+  top: 2vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 1s;
+}
+
+.sparkle:nth-child(97) {
+  --size: 0.2vw;
+  left: 49vw;
+  right: 71vw;
+  bottom: 8vw;
+  top: 46vw;
+  animation: SparkleAnimation 8s linear infinite;
+  animation-delay: 6s;
+}
+
+.sparkle:nth-child(98) {
+  --size: 0.2vw;
+  left: 80vw;
+  right: 47vw;
+  bottom: 32vw;
+  top: 19vw;
+  animation: SparkleAnimation 13s linear infinite;
+  animation-delay: 9s;
+}
+
+.sparkle:nth-child(99) {
+  --size: 0.2vw;
+  left: 67vw;
+  right: 8vw;
+  bottom: 35vw;
+  top: 34vw;
+  animation: SparkleAnimation 14s linear infinite;
+  animation-delay: 7s;
+}
+
+.sparkle:nth-child(100) {
+  --size: 0.2vw;
+  left: 47vw;
+  right: 31vw;
+  bottom: 47vw;
+  top: 31vw;
+  animation: SparkleAnimation 7s linear infinite;
+  animation-delay: 8s;
+}
+
+.ProjectContainer {
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--ProjectContainerBackground);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+}
+
+.ProjectContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.CoolHover1 {
+  width: 60%;
+  height: 100vh;
+  border-left: solid 2pt;
+  border-right: solid 2pt;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: OuterBox1 3s infinite linear;
+  border-color: rgb(197, 71, 255);
+  animation-delay: 2.5s;
+  z-index: 10;
+}
+
+.CoolHover2 {
+  width: 95%;
+  height: 100vh;
+  border-left: solid 2pt;
+  border-right: solid 2pt;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: OuterBox2 3s infinite linear;
+  animation-delay: 2s;
+  z-index: 10;
+  border-color: rgb(175, 61, 228);
+}
+
+.CoolHover3 {
+  width: 95%;
+  height: 100vh;
+  border-left: solid 2pt;
+  border-right: solid 2pt;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: OuterBox3 3s infinite linear;
+  animation-delay: 1.5s;
+  z-index: 10;
+  border-color: rgb(134, 35, 180);
+}
+
+.CoolHover4 {
+  width: 95%;
+  height: 100vh;
+  border-left: solid 2pt;
+  border-right: solid 2pt;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: OuterBox4 3s infinite linear;
+  animation-delay: 1s;
+  z-index: 10;
+  border-color: rgb(100, 28, 133);
+}
+
+@keyframes OuterBox1 {
+  0% {
+    border-color: rgb(255, 243, 71);
+  }
+  50% {
+    border-color: rgb(197, 71, 255);
+  }
+  100% {
+    border-color: rgb(255, 243, 71);
+  }
+}
+@keyframes OuterBox2 {
+  0% {
+    border-color: rgb(225, 228, 61);
+  }
+  50% {
+    border-color: rgb(175, 61, 228);
+  }
+  100% {
+    border-color: rgb(225, 228, 61);
+  }
+}
+@keyframes OuterBox3 {
+  0% {
+    border-color: rgb(180, 166, 35);
+  }
+  50% {
+    border-color: rgb(134, 35, 180);
+  }
+  100% {
+    border-color: rgb(180, 166, 35);
+  }
+}
+@keyframes OuterBox4 {
+  0% {
+    border-color: rgb(133, 123, 28);
+  }
+  50% {
+    border-color: rgb(100, 28, 133);
+  }
+  100% {
+    border-color: rgb(133, 123, 28);
+  }
+}
+.TwoGrid {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Project {
+  text-align: center;
+  background-color: var(--ProjectContainerTextBackground);
+  width: 40%;
+  border-radius: 25pt;
+  padding: 20pt;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 5pt 5pt 0pt var(--ProjectContainerTextShadow);
+  margin-bottom: 20pt;
+}
+
+.ImageSize {
+  width: 50%;
+}
+
+.Django {
+  color: rgb(99, 182, 99);
+}
+
+.Java {
+  color: rgb(236, 177, 68);
+}
+
+.Python {
+  color: rgb(122, 122, 255);
+}
+
+.React {
+  color: rgb(120, 204, 231);
+}
+
+.SoloProject {
+  color: rgb(200, 152, 255);
+}
+
+.GroupProject {
+  color: #f6ffcf;
+}/*# sourceMappingURL=styles.css.map */
